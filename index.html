@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Simulador de Provas">
+        <title>Simulador de Provas</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1>Simulador de Provas</h1>
+            </header>
+
+            <main>
+
+                <section class="theme-switcher">
+                    <button class="btn" onclick="toggleTheme()"
+                        aria-label="Alternar cargo para Assistente Administrativo ou Técnico em Logística">
+                        Alternar Cargo
+                    </button>
+                    <p id="cargo-atual" role="status">Cargo Atual: Assistente Administrativo</p>
+                </section>
+
+                <section id="quiz-container" role="region" aria-labelledby="quiz-title">
+                    <!-- As questões serão inseridas dinamicamente via JavaScript -->
+                </section>
+
+                <div class="feedback" aria-live="assertive" role="alert" id="feedback-text"></div>
+
+                <div class="buttons-container hidden">
+                    <!-- Botões de "Refazer" e "Reiniciar" serão inseridos dinamicamente via JavaScript -->
+                </div>
+
+            </main>
+
+            <footer class="footer">
+                <p>Simulador de Provas - 2024</p>
+            </footer>
+
+        </div>
+
+        <!-- JavaScript -->
+        <script defer src="assets/js/engine.js"></script>
+        
+    </body>
+
+</html>
